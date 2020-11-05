@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Title</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/howler.min.js"></script>
+
+
+    <div class="scene-wrapper">
+      <div id="scene">
+        <div data-depth="0.00" class="space">
+            <img src="./images/space.png"/>
+        </div>
+        <div data-depth="0.00" class="earth">
+            <div class="wrapper">
+                <img src="./images/earth.png"/>
+            </div>
+        </div>
+        <div data-depth="0.02" class="interior">
+            <img src="./images/interior.png"/>
+        </div>
+        <div data-depth="0.05" class="hatch">
+            <img src="./images/hatch.png"/>
+        </div>
+      </div>
+    </div>
+
+  <script>
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene, {
+      relativeInput: true
+    });
+
+    var sound = new Howl({
+      src: ['audio/ship.mp3'],
+      autoplay: true,
+      loop: true
+    });
+
+    sound.play();
+  </script>
+
+</body>
+</html>

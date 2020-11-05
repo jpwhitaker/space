@@ -1,0 +1,110 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #16242c;
+}
+
+.scene-wrapper {
+
+}
+
+#scene {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.interior {
+    height: 100vh;
+    /*opacity: .30;*/
+    top: -5% !important;
+    left: -5% !important;
+}
+
+.interior > img {
+    height: 108%;
+
+}
+
+.hatch {
+    height: 100vh;
+    /*opacity: .30;*/
+        top: -2% !important;
+    left: -2% !important;
+}
+
+.hatch > img {
+    height: 104%;
+}
+
+.earth {
+    height: 100vh
+}
+
+.wrapper > img {
+    height: 100vh;
+}
+
+
+@keyframes drawArc {
+    0% { transform:  translateX(25%) translateY(7%)  ;}
+    100%{ transform:  translateX(-20%) translateY(-3%) ;  }
+}
+
+
+
+.wrapper {
+    
+    animation: drawArc 30s linear infinite;
+}
+
+
+
+
+.space { 
+    overflow: hidden;
+ }
+
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.space > img {
+    height: 100vh;
+  -webkit-animation: rotating 324s linear infinite;
+  -moz-animation: rotating 324s linear infinite;
+  -ms-animation: rotating 324s linear infinite;
+  -o-animation: rotating 324s linear infinite;
+  animation: rotating 324s linear infinite;
+}
+
