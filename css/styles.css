@@ -43,6 +43,7 @@ body {
 
 .earth {
     height: 100vh
+
 }
 
 .wrapper > img {
@@ -66,6 +67,8 @@ body {
 
 
 .space { 
+    top: -2% !important;
+    left: -2% !important;
     overflow: hidden;
  }
 
